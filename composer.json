@@ -1,7 +1,10 @@
 {
     "name": "openpsa/poser",
     "description": "Install CLI executables from Composer packages globally",
-    "keywords": ["composer", "console"],
+    "keywords": [
+        "composer",
+        "console"
+    ],
     "license": "LGPL-2.1-or-later",
     "authors": [
         {
@@ -10,10 +13,10 @@
             "homepage": "http://www.contentcontrol-berlin.de/"
         }
     ],
-    "require": {
-        "composer/composer": "^1.0"
-    },
-    "bin": ["bin/poser"],
+    "require": {},
+    "bin": [
+        "bin/poser"
+    ],
     "scripts": {
         "post-install-cmd": [
             "openpsa\\poser\\installer::setup"
@@ -23,6 +26,8 @@
         ]
     },
     "autoload": {
-	    "psr-4": { "openpsa\\poser\\": "src/" }
+        "psr-4": {
+            "openpsa\\poser\\": "src/"
+        }
     }
 }
